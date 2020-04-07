@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>红叶个人博客</title>
+    <title>js面向对象-基本概念和用法01 | 红叶个人博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="红叶">
     
 
     
-    <meta name="description" content="记录一个程序猿的成长">
-<meta property="og:type" content="website">
-<meta property="og:title" content="红叶个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="js面向对象-基本概念和用法01 数据类型 等于和全等于符号说明 运算符 值类型和引用类型 对象的动态特性（点语法、中括号） in关键字 delete关键字 异常处理 面向过程和面向对象编程 面向对象的特点 创建对象的几种方法 构造函数注意事项  一、两种数据类型1、基本（简单）数据类型string 字符串类型 number 数值（小数和整数） boolean 布尔类型（true|false） n">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js面向对象-基本概念和用法01">
+<meta property="og:url" content="http://yoursite.com/2017/01/02/My-New-Post/index.html">
 <meta property="og:site_name" content="红叶个人博客">
-<meta property="og:description" content="记录一个程序猿的成长">
+<meta property="og:description" content="js面向对象-基本概念和用法01 数据类型 等于和全等于符号说明 运算符 值类型和引用类型 对象的动态特性（点语法、中括号） in关键字 delete关键字 异常处理 面向过程和面向对象编程 面向对象的特点 创建对象的几种方法 构造函数注意事项  一、两种数据类型1、基本（简单）数据类型string 字符串类型 number 数值（小数和整数） boolean 布尔类型（true|false） n">
+<meta property="og:updated_time" content="2017-05-06T12:28:01.387Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="红叶个人博客">
-<meta name="twitter:description" content="记录一个程序猿的成长">
+<meta name="twitter:title" content="js面向对象-基本概念和用法01">
+<meta name="twitter:description" content="js面向对象-基本概念和用法01 数据类型 等于和全等于符号说明 运算符 值类型和引用类型 对象的动态特性（点语法、中括号） in关键字 delete关键字 异常处理 面向过程和面向对象编程 面向对象的特点 创建对象的几种方法 构造函数注意事项  一、两种数据类型1、基本（简单）数据类型string 字符串类型 number 数值（小数和整数） boolean 布尔类型（true|false） n">
 
     
     <link rel="alternative" href="/atom.xml" title="红叶个人博客" type="application/atom+xml">
@@ -73,12 +75,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2017/01/02/My-New-Post/" title="js面向对象-基本概念和用法01" itemprop="url">js面向对象-基本概念和用法01</a>
@@ -92,9 +92,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h1 id="js面向对象-基本概念和用法01"><a href="#js面向对象-基本概念和用法01" class="headerlink" title="js面向对象-基本概念和用法01"></a>js面向对象-基本概念和用法01</h1><ol>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#js面向对象-基本概念和用法01"><span class="toc-number">1.</span> <span class="toc-text">js面向对象-基本概念和用法01</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、两种数据类型"><span class="toc-number">1.1.</span> <span class="toc-text">一、两种数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、基本（简单）数据类型"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">1、基本（简单）数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、复杂（复合）数据类型"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">2、复杂（复合）数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、判断数据的类型"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">3、判断数据的类型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#语法：typeof-变量"><span class="toc-number">1.1.0.0.3.1.</span> <span class="toc-text">语法：typeof 变量</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、等于和全等于说明"><span class="toc-number">1.2.</span> <span class="toc-text">二、等于和全等于说明</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、赋值操作（-）"><span class="toc-number">1.2.0.0.1.</span> <span class="toc-text">1、赋值操作（=）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、等于符号（-）"><span class="toc-number">1.2.0.0.2.</span> <span class="toc-text">2、等于符号（==）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、全等于符号（-）"><span class="toc-number">1.2.0.0.3.</span> <span class="toc-text">3、全等于符号（===）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、不等于符号（！-）"><span class="toc-number">1.2.0.0.4.</span> <span class="toc-text">4、不等于符号（！=）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5、不全等于（！-）"><span class="toc-number">1.2.0.0.5.</span> <span class="toc-text">5、不全等于（！==）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、运算符"><span class="toc-number">1.3.</span> <span class="toc-text">三、运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、关系运算符"><span class="toc-number">1.3.0.0.1.</span> <span class="toc-text">1、关系运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、逻辑运算符"><span class="toc-number">1.3.0.0.2.</span> <span class="toc-text">2、逻辑运算符</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、值类型和引用类型"><span class="toc-number">1.4.</span> <span class="toc-text">四、值类型和引用类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、值类型和引用类型"><span class="toc-number">1.4.0.0.1.</span> <span class="toc-text">1、值类型和引用类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、值类型和引用类型的赋值"><span class="toc-number">1.4.0.0.2.</span> <span class="toc-text">2、值类型和引用类型的赋值</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、对象的动态特性（点语法、中括号）"><span class="toc-number">1.5.</span> <span class="toc-text">五、对象的动态特性（点语法、中括号）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、in关键字"><span class="toc-number">1.6.</span> <span class="toc-text">六、in关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、delete关键字"><span class="toc-number">1.7.</span> <span class="toc-text">七、delete关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、异常处理"><span class="toc-number">1.8.</span> <span class="toc-text">八、异常处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM操作-增加-删除-修改-查询"><span class="toc-number">1.8.1.</span> <span class="toc-text">DOM操作:增加 | 删除 | 修改 |查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、面向过程和面向对象编程"><span class="toc-number">1.9.</span> <span class="toc-text">九、面向过程和面向对象编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、面向对象的特点"><span class="toc-number">1.10.</span> <span class="toc-text">十、面向对象的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、封装"><span class="toc-number">1.10.0.0.1.</span> <span class="toc-text">1、封装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、继承"><span class="toc-number">1.10.0.0.2.</span> <span class="toc-text">2、继承</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、多态"><span class="toc-number">1.10.0.0.3.</span> <span class="toc-text">3、多态</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一、创建对象的几种方法"><span class="toc-number">1.11.</span> <span class="toc-text">十一、创建对象的几种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、字面量方式"><span class="toc-number">1.11.0.0.1.</span> <span class="toc-text">1、字面量方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、使用内置的构造函数"><span class="toc-number">1.11.0.0.2.</span> <span class="toc-text">2、使用内置的构造函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、使用简单工厂函数"><span class="toc-number">1.11.0.0.3.</span> <span class="toc-text">3、使用简单工厂函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、自定义构造函数"><span class="toc-number">1.11.0.0.4.</span> <span class="toc-text">4、自定义构造函数</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十二、构造函数注意事项"><span class="toc-number">1.12.</span> <span class="toc-text">十二、构造函数注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、函数传值"><span class="toc-number">1.12.0.0.1.</span> <span class="toc-text">1、函数传值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、对象的类型（判断）"><span class="toc-number">1.12.0.0.2.</span> <span class="toc-text">2、对象的类型（判断）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、构造器属性（获取）"><span class="toc-number">1.12.0.0.3.</span> <span class="toc-text">3、构造器属性（获取）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、函数调用"><span class="toc-number">1.12.0.0.4.</span> <span class="toc-text">4、函数调用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5、构造函数方式创建对象存在的问题"><span class="toc-number">1.12.0.0.5.</span> <span class="toc-text">5、构造函数方式创建对象存在的问题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="js面向对象-基本概念和用法01"><a href="#js面向对象-基本概念和用法01" class="headerlink" title="js面向对象-基本概念和用法01"></a>js面向对象-基本概念和用法01</h1><ol>
 <li>数据类型</li>
 <li>等于和全等于符号说明</li>
 <li>运算符</li>
@@ -439,14 +446,9 @@ console.log(dog1.constructor);
 <li>把函数写在外部，破坏了封装性</li>
 <li>增加一个全局变量</li>
 </ol>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 
@@ -454,24 +456,30 @@ console.log(dog1.constructor);
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="http://yoursite.com/2017/01/02/My-New-Post/" data-title="js面向对象-基本概念和用法01 | 红叶个人博客" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
+   	       
+	</article>
+	
+	
 
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#js面向对象-基本概念和用法01"><span class="toc-number">1.</span> <span class="toc-text">js面向对象-基本概念和用法01</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、两种数据类型"><span class="toc-number">1.1.</span> <span class="toc-text">一、两种数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、基本（简单）数据类型"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">1、基本（简单）数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、复杂（复合）数据类型"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">2、复杂（复合）数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、判断数据的类型"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">3、判断数据的类型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#语法：typeof-变量"><span class="toc-number">1.1.0.0.3.1.</span> <span class="toc-text">语法：typeof 变量</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、等于和全等于说明"><span class="toc-number">1.2.</span> <span class="toc-text">二、等于和全等于说明</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、赋值操作（-）"><span class="toc-number">1.2.0.0.1.</span> <span class="toc-text">1、赋值操作（=）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、等于符号（-）"><span class="toc-number">1.2.0.0.2.</span> <span class="toc-text">2、等于符号（==）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、全等于符号（-）"><span class="toc-number">1.2.0.0.3.</span> <span class="toc-text">3、全等于符号（===）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、不等于符号（！-）"><span class="toc-number">1.2.0.0.4.</span> <span class="toc-text">4、不等于符号（！=）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5、不全等于（！-）"><span class="toc-number">1.2.0.0.5.</span> <span class="toc-text">5、不全等于（！==）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、运算符"><span class="toc-number">1.3.</span> <span class="toc-text">三、运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、关系运算符"><span class="toc-number">1.3.0.0.1.</span> <span class="toc-text">1、关系运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、逻辑运算符"><span class="toc-number">1.3.0.0.2.</span> <span class="toc-text">2、逻辑运算符</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、值类型和引用类型"><span class="toc-number">1.4.</span> <span class="toc-text">四、值类型和引用类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、值类型和引用类型"><span class="toc-number">1.4.0.0.1.</span> <span class="toc-text">1、值类型和引用类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、值类型和引用类型的赋值"><span class="toc-number">1.4.0.0.2.</span> <span class="toc-text">2、值类型和引用类型的赋值</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、对象的动态特性（点语法、中括号）"><span class="toc-number">1.5.</span> <span class="toc-text">五、对象的动态特性（点语法、中括号）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、in关键字"><span class="toc-number">1.6.</span> <span class="toc-text">六、in关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、delete关键字"><span class="toc-number">1.7.</span> <span class="toc-text">七、delete关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、异常处理"><span class="toc-number">1.8.</span> <span class="toc-text">八、异常处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM操作-增加-删除-修改-查询"><span class="toc-number">1.8.1.</span> <span class="toc-text">DOM操作:增加 | 删除 | 修改 |查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、面向过程和面向对象编程"><span class="toc-number">1.9.</span> <span class="toc-text">九、面向过程和面向对象编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、面向对象的特点"><span class="toc-number">1.10.</span> <span class="toc-text">十、面向对象的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、封装"><span class="toc-number">1.10.0.0.1.</span> <span class="toc-text">1、封装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、继承"><span class="toc-number">1.10.0.0.2.</span> <span class="toc-text">2、继承</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、多态"><span class="toc-number">1.10.0.0.3.</span> <span class="toc-text">3、多态</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一、创建对象的几种方法"><span class="toc-number">1.11.</span> <span class="toc-text">十一、创建对象的几种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、字面量方式"><span class="toc-number">1.11.0.0.1.</span> <span class="toc-text">1、字面量方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、使用内置的构造函数"><span class="toc-number">1.11.0.0.2.</span> <span class="toc-text">2、使用内置的构造函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、使用简单工厂函数"><span class="toc-number">1.11.0.0.3.</span> <span class="toc-text">3、使用简单工厂函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、自定义构造函数"><span class="toc-number">1.11.0.0.4.</span> <span class="toc-text">4、自定义构造函数</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十二、构造函数注意事项"><span class="toc-number">1.12.</span> <span class="toc-text">十二、构造函数注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、函数传值"><span class="toc-number">1.12.0.0.1.</span> <span class="toc-text">1、函数传值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、对象的类型（判断）"><span class="toc-number">1.12.0.0.2.</span> <span class="toc-text">2、对象的类型（判断）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、构造器属性（获取）"><span class="toc-number">1.12.0.0.3.</span> <span class="toc-text">3、构造器属性（获取）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、函数调用"><span class="toc-number">1.12.0.0.4.</span> <span class="toc-text">4、函数调用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5、构造函数方式创建对象存在的问题"><span class="toc-number">1.12.0.0.5.</span> <span class="toc-text">5、构造函数方式创建对象存在的问题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
@@ -602,12 +610,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -678,4 +763,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
